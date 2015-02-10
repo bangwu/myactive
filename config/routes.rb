@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :staffs
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root 'admin/dashboard#index'
